@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(191,141,103);
+background: radial-gradient(circle, rgba(191,141,103,1) 6%, rgba(171,107,51,1) 61%, rgba(91,51,29,1) 100%);
+color: white;
+font-size: 2.2vh;
+}
+
+.conteiner{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header{
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 2vh;
+}
+h1{
+    margin-bottom: 1vh;
+}
+form{
+    background-color: rgba(61, 37, 29, 0.7);
+    border-radius: 6px;
+    padding: 5vh;
+
+}
+.form__item{
+    margin-bottom: 6vh;
+}
+label{
+    display: block;
+    margin-bottom: 1vh;
+}
+form p,
+#name-label,
+#email-label,
+#number-label{
+    margin-bottom: 1.5vh;
+    font-weight: bold;
+    font-size: 2.4vh;
+}
+
+.listed label{
+    cursor: pointer;
+
+}
+.listed input{
+    cursor: pointer;
+    margin-right: 1vh;
+
+}
+
+.field{
+    width:100%;
+    height: 4vh;
+    font-size: 2.2vh;
+    padding: 0.5vh 1.2vh;
+    border: none;
+    border-radius: 3px;
+
+
+    color: black;
+}
+
+.field_big{
+    height: 22vh;
+    resize: none;
+}
+
+#submit{
+    width: 100%;
+    color:white;
+    font-size: 2.4vh;
+    border: none;
+    padding: 2%;
+    background-color: rgba(171,107,51,1);
+    cursor: pointer;
+}

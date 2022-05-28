@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./text.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conteiner">
+        <header>
+            <h1 id="survey">Survey</h1>
+            <p id="description">Which music instruments do you like</p>
+
+        </header>
+        <form action="#" id="survey-form">
+            <div class="form__item">
+                <label id='name-label' for="name">Name</label>
+                <input id='name' name='name' type="text" class="field" placeholder="Enter your name" required>
+            </div>
+            <div class="form__item">
+                <label id='email-label' for="email">Email</label>
+                <input id='email' name='email' type="email" class="field"placeholder="example@mail.com" required>
+            </div>
+            <div class="form__item">
+                <label id='number-label' for="number">Age</label>
+                <input id='number' name='age' type="number" class="field" placeholder="Enter your age" min='10' max='90' required>
+            </div>
+            <div class="form__item listed">
+                <p>How are you related to the music?</p>
+                <label><input name ='musician-type' value="professional" type="radio"  required> I'm a professional musician</label>
+                <label><input name ='musician-type' value="non-professional" type="radio"  required> I'm a non-professional musician</label>
+                <label><input name ='musician-type' value="played" type="radio"  required> I played an instrument at school</label>
+                <label><input name ='musician-type' value="parant" type="radio"  required> I have a child playing an instrument</label>
+                <label><input name ='musician-type' value="non-musician" type="radio"  required> I'm not a musician</label>
+            </div>
+            <div class="form__item">
+                <p>What kind of insturments do you (your child) play?</p>
+                <select name='playing-instrument' id='playing-insturments' class="field" required>
+                    <option value="" selected disabled>Select the option</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="String">String</option>
+                    <option value="Brass">Brass</option>
+                    <option value="Woodwind">Woodwind</option>
+                    <option value="Drums">Drums</option>
+                </select>
+
+            </div>
+            <div class="form__item listed" >
+                <p>What instruments do you like?</p>
+                <label><input type="checkbox" name="instrument-preference" value="Accordion"> Accordion </label>
+                <label><input type="checkbox" name="instrument-preference" value="Piano"> Piano</label>
+                <label><input type="checkbox" name="instrument-preference" value="Organ"> Organ </label>
+                <label><input type="checkbox" name="instrument-preference" value="Harp">  Harp  </label>
+                <label><input type="checkbox" name="instrument-preference" value="Violin"> Violin</label>
+                <label><input type="checkbox" name="instrument-preference" value="Viola"> Viola </label>
+                <label><input type="checkbox" name="instrument-preference" value="Cello"> Cello </label>
+                <label><input type="checkbox" name="instrument-preference" value="Double-bass"> Double bass</label>
+                <label><input type="checkbox" name="instrument-preference" value="Flute">   Flute   </label>
+                <label><input type="checkbox" name="instrument-preference" value="Oboe">    Oboe    </label>
+                <label><input type="checkbox" name="instrument-preference" value="Clarinet"> Clarinet</label>
+                <label><input type="checkbox" name="instrument-preference" value="Trumpet"> Trumpet </label>
+                <label><input type="checkbox" name="instrument-preference" value="Trombone"> Trombone</label>
+                <label><input type="checkbox" name="instrument-preference" value="Drum-set"> Drum set</label>
+
+            </div>
+            <div class="form__item">
+                <p>You can add something else</p>
+                <textarea name="additions" class="field field_big" id="additions" cols="30" rows="10" placeholder="Enter your additions or comments"></textarea>
+            </div>
+            <div class="form__item">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+
+</body>
+</html>
